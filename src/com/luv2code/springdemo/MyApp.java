@@ -7,6 +7,7 @@ public class MyApp {   //Main or driver class
 		
 		// Create the object "theCoach" of the class "BaseballCoach"
         //BaseballCoach theCoach = new BaseballCoach();
+		//Coach theCoach = new BaseballCoach();
 		Coach theCoach = new TrackCoach();  // Left side changed from child class "BaseballCoach"
 		                                      // to parent class "Coach"
 		
