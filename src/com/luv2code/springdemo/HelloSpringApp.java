@@ -20,8 +20,11 @@ public class HelloSpringApp {
 		//class name ko particular naa karke, general kardiya hai, aur class ke package ko
 		//applicationContext.xml mein likh diya hai.
 		
+		
 		//call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
+		
+		    //Both these methods are overrided in TrackCoach & Baseball Classes
 		
 		// let's call our new method for fortunes
 		System.out.println(theCoach.getDailyFortune());

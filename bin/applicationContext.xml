@@ -19,15 +19,27 @@
     
     </bean>
     
-    <bean id="myCoach"
+    <!-- <bean id="myCoach"
     		class="com.luv2code.springdemo.BaseballCoach">
+    		
+    		set up constructor injection 
+    		<constructor-arg ref="myFortune"/>
+    		
+    		Space + / for changing from </beans> to />
+    		
+    		
+    </bean> -->
+    
+    <bean id="myCoach"
+    		class="com.luv2code.springdemo.TrackCoach">
     		
     		<!-- set up constructor injection  -->
     		<constructor-arg ref="myFortune"/>
     		
     		<!-- Space + / for changing from </beans> to /> -->
     		
-    		
+    		<!-- Backend mein ye ho raha hai >> TrackCoach myCoach = new TrackCoach(myFortune) -->
+    		<!-- TrackCoach class ke myCoach obj mein, myFortune pass kar rahe hain  -->
     </bean>
     
     

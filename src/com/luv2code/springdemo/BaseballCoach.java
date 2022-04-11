@@ -28,7 +28,8 @@ public class BaseballCoach implements Coach{  // Class implementing interface "C
 		return fortuneService.getFortune(); //This is called dependency injection or helper
 											// injection
 	}
-	
+	//constructor ke private field "fortuneService" ke help se HappyFortuneService class ke getFortune() method ko call karenge"
+
 	
 	//Coach interface ke under getDailyFortune() method hai.
 }   //FortuneService Interface ke under getFortune() method hai.
