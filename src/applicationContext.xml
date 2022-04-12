@@ -19,6 +19,12 @@
     
     </bean>
     
+    <!-- Define the setter dependency with new id -->
+    <bean id="myFortuneService"
+    		class="com.luv2code.springdemo.HappyFortuneService">
+    
+    </bean>
+    
     <!-- <bean id="myCoach"
     		class="com.luv2code.springdemo.BaseballCoach">
     		
@@ -34,13 +40,27 @@
     		class="com.luv2code.springdemo.TrackCoach">
     		
     		<!-- set up constructor injection  -->
+    		<!-- Referring to line 17 -->
+    		<!-- Below line will call TrackCoach() constructor and will pass line 17 in argument with the help of ref="myFortune" -->
     		<constructor-arg ref="myFortune"/>
     		
     		<!-- Space + / for changing from </beans> to /> -->
     		
-    		<!-- Backend mein ye ho raha hai >> TrackCoach myCoach = new TrackCoach(myFortune) -->
-    		<!-- TrackCoach class ke myCoach obj mein, myFortune pass kar rahe hain  -->
+    		
     </bean>
+    
+    <bean id="myCricketCoach"
+           class="com.luv2code.springdemo.CricketCoach">
+    
+    <!-- Set up setter injection -->
+    <!-- Referring to line 23 -->
+    <!-- Below line will call setFortuneService() and will pass line 23 in argument with the help of ref="myFortuneService"  -->
+    <property name="fortuneService" ref="myFortuneService"/>
+
+    </bean>
+    
+    
+    
     
     
 </beans>

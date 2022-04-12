@@ -7,10 +7,12 @@ public class TrackCoach implements Coach {
 	private FortuneService fortuneService; //FortuneService ek interface hai, jiske under method hai getFortune();
 	   //FortuneService Interface ka ek private field humne banaya jo hai = "fortuneService"
 	
+	public TrackCoach() {} // No argument constructor, for handling error in MyApp.java
+	
 	//define a constructor for dependency injection
-	public TrackCoach(FortuneService fortuneService) { //Private field ko humne TracCoach class ke under pass kiya ya argument rakha.
+	public TrackCoach(FortuneService fortuneService) { //Private field ko humne TrackCoach class ke under pass kiya ya argument rakha.
 		
-		this.fortuneService = fortuneService;
+		this.fortuneService = fortuneService; //Iski value line no 27 se aayegi
 	}
 
 	@Override

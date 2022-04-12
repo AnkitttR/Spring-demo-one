@@ -8,11 +8,11 @@ public class MyApp {   //Main or driver class
 		// Create the object "theCoach" of the class "BaseballCoach"
         //BaseballCoach theCoach = new BaseballCoach();
 		//Coach theCoach = new BaseballCoach();
-		//Coach theCoach = new TrackCoach();  // Left side changed from child class "BaseballCoach"
+		Coach theCoach = new TrackCoach();  // Left side changed from child class "BaseballCoach"
 		                                      // to parent class "Coach"
 		
 		// Use the object
-		//System.out.println(theCoach.getDailyWorkout()); // Access the getDailyWorkout method of 
+		System.out.println(theCoach.getDailyWorkout()); // Access the getDailyWorkout method of 
 								//class BaseballCoach through the "theCoach" obj of same class.
 		
 	}
