@@ -33,7 +33,7 @@ public class TrackCoach implements Coach {
 	}
 	
 	//add a destroy method
-	public void doMyCleanupStuffYoYo{
+	public void doMyCleanupStuffYoYo(){
 		System.out.println("TrackCoach: inside method doMyCleanupStuffYoYo");
 	}
 	
